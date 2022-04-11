@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment-NodeExpress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Comforter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/234be40154.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+
+<body>
+
+
+<h1 style="text-align:center;padding-top:1rem">Project Details!</h1>
+<br>
+<br>
+<div class="container-fluid">
+
+
+    <h2>Yours Projects</h2>
+
+  <div class="tab">
+    <table class="table">
+        <thead>
+        <tr>
+
+            <th scope="col">#</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Roll-No</th>
+            <th scope="col">Semester</th>
+            <th scope="col">Project Details</th>
+            <th scope="col">Technology Used</th>
+
+        </tr>
+        </thead>
+        <tbody>
+          <% val.forEach(function(to){  %>
+                  <tr>
+                    <td><%= to.S20200010001id %></td>
+                    <td><%= to.S20200010001ProjectName %></td>
+                    <td><%= to.S20200010001RollNo %></td>
+                    <td><%= to.S20200010001Semester %></td>
+                    <td><%= to.S20200010001ProjectDetails %></td>
+                    <td><%= to.S20200010001TechUsed %></td>
+                  </tr>
+                <%})%>
+
+        </tbody>
+    </table>
+  </div>
+  <h2>Add Project</h2>
+
+  <div class="tab1">
+
+    <form action="/" method="post" >
+      <div class="form-group">
+        <label for="projname">Project Name</label>
+        <input type="text" class="form-control" id="projname"  placeholder="Enter Project Name">
+
+      </div>
+        <div class="form-group">
+            <label for="roll">Roll-No</label>
+            <input type="text" class="form-control" id="roll"  placeholder="Enter Roll Number">
+
+        </div>
+        <div class="form-group">
+            <label for="sem">Semester</label>
+            <input type="text" class="form-control" id="sem"  placeholder="Enter Current Semester">
+
+        </div>
+
+        <div class="form-group">
+            <label for="projdet">Project Details</label>
+            <textarea class="form-control" id="projdet"  placeholder="Enter Project Details" rows="3"></textarea>
+
+
+        </div>
+        <div class="form-group">
+            <label for="tech">Technology Used</label>
+            <input type="text" class="form-control" id="tech"  placeholder="Enter Technology Used">
+
+        </div>
+        <div class="butt">
+          <button type="submit" id="but" class="btn btn-dark">Add Project</button>
+        </div>
+
+    </form>
+
+
+  </div>
+
+<div class="contact">
+  <div class="row">
+    <div class="col-4">
+<i class="fas fa-phone"></i>
+<br>
+<a href="#" style="text-decoration: none;">+91-8999964722</a>
+    </div>
+    <div class="col-4">
+
+<i class="fas fa-globe-asia"></i>
+<br>
+<a href="https://www.google.com/maps/place/Aurangabad,+Maharashtra/@19.8725325,75.1372591,10.84z/data=!4m5!3m4!1s0x3bdb9815a369bc63:0x712d538b29a2a73e!8m2!3d19.8761653!4d75.3433139" style="text-decoration: none;">Aurangabad,Maharashtra</a>
+
+</div>
+    <div class="col-4">
+<i class="fas fa-envelope"></i>
+<a href="mailto:aalhadakate@gmail.com" style="text-decoration: none;">aalhadakate@gmail.com</a>
+
+    </div>
+
+  </div>
+
+</div>
+<footer class="f-section" id="footer" style="text-align:center">
+
+    <p>© Copyright 2022 YourProject</p>
+
+</footer>
+
+</div>
+
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.tab{
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+
+}
+.tab1{
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+
+}
+.butt{
+  padding-top: 1rem;
+
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.contact{
+  padding-top: 1rem;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-bottom: 1.5rem;
+}
+a{
+  color: black;
+  font-size: 1rem;
+
+}
+
+
+
+p{
+    color: #8f8f8f;
+}
